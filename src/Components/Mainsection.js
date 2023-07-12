@@ -1,7 +1,6 @@
 import React from 'react';
 
-const Mainsection = (props) => {
-    const { children } = props;
+const Mainsection = ({ children }) => {
     return (
         <div className='mainSection'>
             {children}

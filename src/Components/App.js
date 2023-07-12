@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import Banner from "./Banner";
 import ApptContainer from "./ApptContainer";
 import Mainsection from "./Mainsection";
-
+import Footer from "./Footer";
 function App() {
   return (
     <div className="App">
@@ -12,6 +12,7 @@ function App() {
         <Banner />
         <ApptContainer />
       </Mainsection>
+      <Footer />
     </div>
   );
 }
