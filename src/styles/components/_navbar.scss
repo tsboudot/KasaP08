@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    color: $color-main;
+    font-weight: $bold;
+    gap: 2rem;
+
+    p {
+        margin: 0 45px;
+        font-size: large;
+    }
+}
+
+.navbar__logo {
+    margin-right: auto;
+    height: 10rem;
+
+    img {
+        height: 100%;
+        object-fit: fill;
+    }
+
+}
