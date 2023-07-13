@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import CardAppt from './CardAppt';
 
+
+fetch("./db.json")
+    .then((res) => res.json())
+    .then(console.log);
 const ApptContainer = () => {
     const [numItems, setNumItems] = useState(8); // Initialiser à la valeur par défaut
 
