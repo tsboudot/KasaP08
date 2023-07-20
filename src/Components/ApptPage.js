@@ -3,11 +3,14 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Apptheader from './Apptheader'
 import Apptinfos from './Apptinfos'
-const ApptPage = () => {
+import { useParams } from 'react-router-dom';
+
+function ApptPage(props) {
+
     return (
         <div>
             <Navbar />
-            <Apptheader />
+            <Apptheader tittle={props.tittle} />
             <Apptinfos />
             <Footer />
         </div>

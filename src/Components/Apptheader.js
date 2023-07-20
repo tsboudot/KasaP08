@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Apptheader = () => {
+function Apptheader(props) {
     return (
-        <div>
-
+        <div class="apptHeader">
+            <h1 className="apptTittle">{props.tittle}</h1>
         </div>
     );
 };

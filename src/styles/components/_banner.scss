@@ -1,8 +1,11 @@
 .banner {
     width: 100%;
+    max-width: 100vh;
     height: 240px;
     margin: 0 auto;
-    background-image: url("https://www.figma.com/file/qEno0LwL4ZLkWyeY59kxp1/UI-Design-Kasa-FR?type=design&node-id=165455-718&mode=dev");
-    place-items: center;
+    background-image: url("/public/banner.png");
     color: lightgray;
+    text-align: center;
+    object-fit: cover;
+
 }

@@ -39,11 +39,14 @@ body {
 
 .banner {
   width: 100%;
+  max-width: 100vh;
   height: 240px;
   margin: 0 auto;
-  background-image: url("https://www.figma.com/file/qEno0LwL4ZLkWyeY59kxp1/UI-Design-Kasa-FR?type=design&node-id=165455-718&mode=dev");
-  place-items: center;
+  background-image: url("/public/banner.png");
   color: lightgray;
+  text-align: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .ApptContainer {
@@ -63,11 +66,8 @@ body {
   border: 3px solid red;
 }
 
-.cardAppt {
+.linkCard {
   background-color: #ff6060;
-  min-width: 33%;
-  color: white;
-  margin: 0.5em;
 }
 
 footer {

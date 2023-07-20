@@ -1,19 +1,39 @@
 import React, { useState, useEffect } from 'react';
 import CardAppt from './CardAppt';
 
+function ApptContainer() {
+    const [appt, setAppt] = useState([]);
 
-fetch("./db.json")
-    .then((res) => res.json())
-    .then(console.log);
-const ApptContainer = () => {
+    useEffect(fetchAppt, []);
+    function fetchAppt() {
+        fetch("db.json")
+            .then((res) => res.json())
+            .then((res) => setAppt(res))
+    }
+
+    return (
+        <div className="apptContainer">
+            {appt.map((appt) => (
+                <CardAppt
+                    id={appt.id}
+                    title={appt.title}
+                    imageCard={appt.cover}
+                />
+            ))}
+        </div>
+    );
+}
+export default ApptContainer;
+
+/*const ApptContainer = () => {
     const [numItems, setNumItems] = useState(8); // Initialiser à la valeur par défaut
 
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth > 768) { // Remplacez 768 par la taille de votre media query
-                setNumItems(9); // Remplacez 12 par le nombre d'items pour les grandes tailles d'écran
+                setNumItems(12); // Remplacez 12 par le nombre d'items pour les grandes tailles d'écran
             } else {
-                setNumItems(3); // Remplacez 8 par le nombre d'items pour les petites tailles d'écran
+                setNumItems(8); // Remplacez 8 par le nombre d'items pour les petites tailles d'écran
             }
         };
 
@@ -35,4 +55,4 @@ const ApptContainer = () => {
     );
 };
 
-export default ApptContainer;
+export default ApptContainer; */

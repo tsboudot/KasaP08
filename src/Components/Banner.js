@@ -4,6 +4,7 @@ const Banner = () => {
     return (
         <div className="banner">
 
+            <p>Chez vous chez vous</p>
 
         </div>
     );
