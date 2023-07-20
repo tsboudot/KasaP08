@@ -73,4 +73,9 @@ body {
 footer {
   background-color: black;
   color: white;
+}
+
+.apptHeader {
+  height: 190px;
+  background-color: red;
 }/*# sourceMappingURL=index.css.map */

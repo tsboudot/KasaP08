@@ -1,15 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import CardAppt from './CardAppt';
+import { useAppt } from './context/ApptContext';
 
 function ApptContainer() {
-    const [appt, setAppt] = useState([]);
-
-    useEffect(fetchAppt, []);
-    function fetchAppt() {
-        fetch("db.json")
-            .then((res) => res.json())
-            .then((res) => setAppt(res))
-    }
+    const appt = useAppt();
 
     return (
         <div className="apptContainer">

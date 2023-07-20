@@ -4,12 +4,11 @@ import { Link } from 'react-router-dom';
 
 function CardAppt(props) {
     const link = {
-        pathname: "/flat",
-        state:
-        {
+        pathname: `/flat/${props.id}`,
+        state: {
             apptId: props.id
         }
-    }
+    };
     return (
         <Link to={link}>
 
