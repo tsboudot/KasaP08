@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
-import { useParams, useLocation } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useAppt } from './context/ApptContext'
 import Apptheader from './Apptheader';
 import Apptinfos from './Apptinfos';
