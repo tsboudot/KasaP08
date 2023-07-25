@@ -1,6 +1,6 @@
 .carousel-root {
     width: 100%;
-    height: 480px;
+    height: 360px;
 }
 
 
@@ -8,9 +8,10 @@
     height: 480px;
     width: 100%;
     display: flex;
+    position: relative;
 }
 
-.slider-wrapper {
+.carousel .slider-wrapper {
     width: 480px;
     height: 100%;
 }
@@ -19,7 +20,7 @@
     height: 100%;
 }
 
-.slide {
+.carousel .slide {
     height: 360px;
     width: 100%;
 }
@@ -27,4 +28,22 @@
 .slide img {
     height: 360px;
     object-fit: cover;
+}
+
+.carousel .thumbs-wrapper {
+    display: none;
+    height: 0;
+}
+
+.control-dots {
+    display: none;
+}
+
+.carousel .carousel-status {
+    top: auto !important;
+    bottom: 0 !important;
+    right: auto !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+
 }

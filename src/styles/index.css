@@ -136,16 +136,17 @@ footer {
 
 .carousel-root {
   width: 100%;
-  height: 480px;
+  height: 360px;
 }
 
 .carousel .carousel-slider {
   height: 480px;
   width: 100%;
   display: flex;
+  position: relative;
 }
 
-.slider-wrapper {
+.carousel .slider-wrapper {
   width: 480px;
   height: 100%;
 }
@@ -154,7 +155,7 @@ footer {
   height: 100%;
 }
 
-.slide {
+.carousel .slide {
   height: 360px;
   width: 100%;
 }
@@ -163,4 +164,21 @@ footer {
   height: 360px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.carousel .thumbs-wrapper {
+  display: none;
+  height: 0;
+}
+
+.control-dots {
+  display: none;
+}
+
+.carousel .carousel-status {
+  top: auto !important;
+  bottom: 0 !important;
+  right: auto !important;
+  left: 50% !important;
+  transform: translateX(-50%);
 }/*# sourceMappingURL=index.css.map */
