@@ -1,4 +1,98 @@
 .apptHeader {
-    height: 190px;
-    background-color: red;
+    height: fit-content;
+    margin: 10px 10px 25px 10px;
+}
+
+.apptHeaderInfos {
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    margin: 10px auto;
+
+    .apptHeaderLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        h3 {
+            color: $color-main;
+            font-weight: $normal;
+            font-size: larger;
+            margin-bottom: 10px;
+        }
+
+        .apptLocation {
+            color: $color-main;
+            font-weight: $light;
+            font-size: medium;
+        }
+    }
+
+}
+
+.apptHeadertags {
+    margin-right: 10px;
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+
+        .tagAppart {
+            background-color: $color-main;
+            color: white;
+            width: fit-content;
+            padding: 5px 10px;
+            border-radius: 15px;
+            margin: 0 5px;
+            font-size: small;
+        }
+    }
+}
+
+.apptHeaderRight {
+    height: 100%;
+
+    .apptHeaderHost {
+        display: flex;
+        flex-direction: row;
+
+        .apptHostName {
+            width: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            color: $color-main;
+            padding-left: auto;
+        }
+
+        .apptHostPicture {
+
+
+            img {
+                object-fit: contain;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .ratings {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .activeStar {
+            color: #ff6060;
+            font-size: x-large;
+        }
+
+        .inactiveStar {
+            color: lightgrey;
+            font-size: x-large;
+        }
+
+    }
 }

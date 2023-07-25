@@ -1,6 +1,8 @@
 .carousel-root {
     width: 100%;
     height: 360px;
+
+
 }
 
 
@@ -9,11 +11,13 @@
     width: 100%;
     display: flex;
     position: relative;
+
 }
 
 .carousel .slider-wrapper {
     width: 480px;
     height: 100%;
+    border-radius: 25px;
 }
 
 .carousel ul {

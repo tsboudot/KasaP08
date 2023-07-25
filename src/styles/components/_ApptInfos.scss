@@ -1,0 +1,72 @@
+.apptInfos {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    width: 95%;
+    margin: 10px auto;
+    ;
+
+    .description {
+        width: 50%;
+    }
+
+    .equipement {
+        width: 50%;
+    }
+}
+
+.apptInfosHeader {
+    width: 100%;
+    height: 35px;
+    background-color: $color-main;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    color: white;
+    padding-left: 10px;
+
+    font-size: medium;
+    font-weight: 400;
+
+    h2 {
+        font-size: small;
+        font-weight: 600;
+    }
+
+    button {
+        border: 0px;
+        background-color: $color-main;
+        color: white;
+        margin-right: 40px;
+        font-size: larger;
+        transition: transform 1s;
+
+        &.rotated {
+            transform: rotate(180deg);
+
+
+        }
+    }
+
+    .apptInfosContent {
+
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s;
+
+        &.visible {
+            height: auto;
+            background-color: $color-secondary;
+            color: $color-main;
+            padding: 5px;
+            font-size: smaller;
+            border-radius: 15px; // Ajuster à la valeur souhaitée
+        }
+
+        ul {
+            list-style: none;
+        }
+    }
+}
