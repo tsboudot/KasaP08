@@ -6,6 +6,9 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .navbar {
@@ -17,6 +20,8 @@ body {
   color: #ff6060;
   font-weight: 700;
   gap: 2rem;
+  width: 95%;
+  margin: 0 auto;
 }
 .navbar a {
   text-decoration: none;
@@ -38,26 +43,32 @@ body {
 }
 
 .banner {
-  width: 100%;
-  max-width: 100vh;
+  width: 95%;
   height: 240px;
-  margin: 0 auto;
-  background-image: url("/public/banner.png");
+  background-image: url("/public/banner1.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
   color: lightgray;
   text-align: center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
-.ApptContainer {
-  background-color: lightgray;
+.apptContainer {
+  background-color: rgb(238, 238, 238);
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
-  width: 100%;
-  height: 829px;
-  margin-top: 2rem;
-  border-radius: 10px;
+  height: 85vh;
+  border-radius: 50px;
+  width: 95%;
+  max-width: 1245px;
+  margin: 10px auto;
+  padding: 25px 0;
 }
 
 .Mainsection {
@@ -66,8 +77,51 @@ body {
   border: 3px solid red;
 }
 
-.linkCard {
-  background-color: #ff6060;
+.cardApptslink {
+  width: 27%;
+  height: 280px;
+  max-width: 345px;
+  max-height: 31%;
+  box-sizing: border-box;
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.cardApptDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.divCardImg {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+}
+
+.cardImage {
+  height: 100%;
+  width: 100%;
+  min-height: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.divCardName {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding-bottom: 8px;
 }
 
 footer {
@@ -78,4 +132,35 @@ footer {
 .apptHeader {
   height: 190px;
   background-color: red;
+}
+
+.carousel-root {
+  width: 100%;
+  height: 480px;
+}
+
+.carousel .carousel-slider {
+  height: 480px;
+  width: 100%;
+  display: flex;
+}
+
+.slider-wrapper {
+  width: 480px;
+  height: 100%;
+}
+
+.carousel ul {
+  height: 100%;
+}
+
+.slide {
+  height: 360px;
+  width: 100%;
+}
+
+.slide img {
+  height: 360px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=index.css.map */

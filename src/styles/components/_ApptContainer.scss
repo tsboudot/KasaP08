@@ -1,10 +1,14 @@
-.ApptContainer {
-    background-color: lightgray;
+.apptContainer {
+    background-color: rgb(238, 238, 238);
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
-    width: 100%;
-    height: 829px;
-    margin-top: 2rem;
-    border-radius: 10px;
+    height: 85vh;
+    border-radius: 50px;
+    width: 95%;
+    max-width: 1245px;
+    margin: 10px auto;
+    padding: 25px 0;
+
 }

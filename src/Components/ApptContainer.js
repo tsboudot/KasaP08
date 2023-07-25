@@ -4,11 +4,29 @@ import { useAppt } from './context/ApptContext';
 
 function ApptContainer() {
     const appt = useAppt();
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
+    const numberOfItemsToShow = isSmallScreen ? 3 : 9;
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsSmallScreen(window.innerWidth < 720);
+        };
+
+        window.addEventListener('resize', handleResize);
+        handleResize(); // Vérifie la taille de l'écran lors du premier rendu
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    const apptToShow = appt.slice(0, numberOfItemsToShow);
 
     return (
         <div className="apptContainer">
-            {appt.map((appt) => (
+            {apptToShow.map((appt) => (
                 <CardAppt
+                    key={appt.id}
                     id={appt.id}
                     title={appt.title}
                     imageCard={appt.cover}

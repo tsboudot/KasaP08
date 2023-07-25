@@ -1,6 +1,8 @@
 import React from 'react';
 
 function Apptinfos({ appt }) {
+    console.log(appt.description);
+    console.log(appt.equipement);
     return (
         <div className="apptInfos">
             <div className="description">

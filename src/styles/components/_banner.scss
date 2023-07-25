@@ -1,11 +1,14 @@
 .banner {
-    width: 100%;
-    max-width: 100vh;
+    width: 95%;
     height: 240px;
-    margin: 0 auto;
-    background-image: url("/public/banner.png");
+    background-image: url("/public/banner1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
     color: lightgray;
     text-align: center;
-    object-fit: cover;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }

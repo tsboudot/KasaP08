@@ -10,9 +10,9 @@ function CardAppt(props) {
         }
     };
     return (
-        <Link to={link}>
+        <Link to={link} className="cardApptslink">
 
-            <div className='cardAppt'>
+            <div className='cardApptDiv'>
                 <div className="divCardImage"><img src={props.imageCard} alt="" className="cardImage" /></div>
                 < div className="divCardName" > <p className=''>{props.title}</p></div >
             </div >
