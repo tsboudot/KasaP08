@@ -51,40 +51,14 @@
     }
 }
 
-.description-enter {
-    max-height: 0;
-    overflow: hidden;
-}
+.apptInfosContent {
+    background-color: $color-secondary;
+    color: $color-main;
+    padding: 5px 5px 5px 15px;
+    border-radius: 25px;
 
-.description-enter-active {
-    max-height: 500px;
-    transition: max-height 1s ease-in;
-}
+    ul {
+        list-style: none;
+    }
 
-.description-exit {
-    max-height: 500px;
-}
-
-.description-exit-active {
-    max-height: 0;
-    transition: max-height 1s ease-out;
-}
-
-.equipment-enter {
-    max-height: 0;
-    overflow: hidden;
-}
-
-.equipment-enter-active {
-    max-height: 500px;
-    transition: max-height 1s ease-in;
-}
-
-.equipment-exit {
-    max-height: 500px;
-}
-
-.equipment-exit-active {
-    max-height: 0;
-    transition: max-height 1s ease-out;
 }

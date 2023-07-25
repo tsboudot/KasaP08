@@ -308,6 +308,16 @@ footer {
   transform: rotate(180deg);
 }
 
+.apptInfosContent {
+  background-color: rgb(238, 238, 238);
+  color: #ff6060;
+  padding: 5px 5px 5px 15px;
+  border-radius: 25px;
+}
+.apptInfosContent ul {
+  list-style: none;
+}
+
 .description-enter {
   max-height: 0;
   overflow: hidden;
