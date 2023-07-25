@@ -49,24 +49,42 @@
 
         }
     }
+}
 
-    .apptInfosContent {
+.description-enter {
+    max-height: 0;
+    overflow: hidden;
+}
 
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 1s;
+.description-enter-active {
+    max-height: 500px;
+    transition: max-height 1s ease-in;
+}
 
-        &.visible {
-            height: auto;
-            background-color: $color-secondary;
-            color: $color-main;
-            padding: 5px;
-            font-size: smaller;
-            border-radius: 15px; // Ajuster à la valeur souhaitée
-        }
+.description-exit {
+    max-height: 500px;
+}
 
-        ul {
-            list-style: none;
-        }
-    }
+.description-exit-active {
+    max-height: 0;
+    transition: max-height 1s ease-out;
+}
+
+.equipment-enter {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.equipment-enter-active {
+    max-height: 500px;
+    transition: max-height 1s ease-in;
+}
+
+.equipment-exit {
+    max-height: 500px;
+}
+
+.equipment-exit-active {
+    max-height: 0;
+    transition: max-height 1s ease-out;
 }

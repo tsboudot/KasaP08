@@ -307,19 +307,41 @@ footer {
 .apptInfosHeader button.rotated {
   transform: rotate(180deg);
 }
-.apptInfosHeader .apptInfosContent {
+
+.description-enter {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1s;
 }
-.apptInfosHeader .apptInfosContent.visible {
-  height: auto;
-  background-color: rgb(238, 238, 238);
-  color: #ff6060;
-  padding: 5px;
-  font-size: smaller;
-  border-radius: 15px;
+
+.description-enter-active {
+  max-height: 500px;
+  transition: max-height 1s ease-in;
 }
-.apptInfosHeader .apptInfosContent ul {
-  list-style: none;
+
+.description-exit {
+  max-height: 500px;
+}
+
+.description-exit-active {
+  max-height: 0;
+  transition: max-height 1s ease-out;
+}
+
+.equipment-enter {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.equipment-enter-active {
+  max-height: 500px;
+  transition: max-height 1s ease-in;
+}
+
+.equipment-exit {
+  max-height: 500px;
+}
+
+.equipment-exit-active {
+  max-height: 0;
+  transition: max-height 1s ease-out;
 }/*# sourceMappingURL=index.css.map */
