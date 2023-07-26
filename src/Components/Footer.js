@@ -3,8 +3,8 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer>
-            <h3>Ceci est un footer</h3>
-            <p>Ceci est un footer</p>
+            <img src="logoBlack.png" alt="logo" className="logoFooter" />
+            <h3>&#9400; 2020 Kasa. All rights reserved</h3>
         </footer>
     );
 };

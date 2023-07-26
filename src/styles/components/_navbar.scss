@@ -3,12 +3,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
     color: $color-main;
     font-weight: $bold;
     gap: 2rem;
     width: 95%;
-    margin: 0 auto;
+    max-width: 1245px;
+    margin: 10px auto;
 
     a {
         text-decoration: none;
@@ -23,7 +23,7 @@
 
 .navbar__logo {
     margin-right: auto;
-    height: 10rem;
+    height: 7rem;
 
     img {
         height: 100%;

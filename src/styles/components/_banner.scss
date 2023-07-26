@@ -1,5 +1,6 @@
 .banner {
     width: 95%;
+    max-width: 1245px;
     height: 240px;
     background-image: url("/public/banner1.png");
     background-size: 100% 100%;
@@ -11,4 +12,6 @@
     align-items: center;
     justify-content: center;
     margin: auto;
+
+    border-radius: 25px;
 }

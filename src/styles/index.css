@@ -16,12 +16,12 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
   color: #ff6060;
   font-weight: 700;
   gap: 2rem;
   width: 95%;
-  margin: 0 auto;
+  max-width: 1245px;
+  margin: 10px auto;
 }
 .navbar a {
   text-decoration: none;
@@ -34,7 +34,7 @@ body {
 
 .navbar__logo {
   margin-right: auto;
-  height: 10rem;
+  height: 7rem;
 }
 .navbar__logo img {
   height: 100%;
@@ -44,6 +44,7 @@ body {
 
 .banner {
   width: 95%;
+  max-width: 1245px;
   height: 240px;
   background-image: url("/public/banner1.png");
   background-size: 100% 100%;
@@ -55,6 +56,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: auto;
+  border-radius: 25px;
 }
 
 .apptContainer {
@@ -80,7 +82,7 @@ body {
 .cardApptslink {
   width: 27%;
   height: 280px;
-  max-width: 345px;
+  max-width: 370px;
   max-height: 31%;
   box-sizing: border-box;
   display: flex;
@@ -119,7 +121,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.35);
   color: white;
   padding-bottom: 8px;
 }
@@ -127,6 +129,15 @@ body {
 footer {
   background-color: black;
   color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+}
+footer img {
+  margin-bottom: 10px;
 }
 
 .apptHeader {
@@ -229,7 +240,6 @@ footer {
 .carousel .slider-wrapper {
   width: 480px;
   height: 100%;
-  border-radius: 25px;
 }
 
 .carousel ul {
@@ -354,4 +364,64 @@ footer {
 .equipment-exit-active {
   max-height: 0;
   transition: max-height 1s ease-out;
+}
+
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  width: 95%;
+  margin: 10px auto;
+  max-width: 1195px;
+}
+
+.rotated {
+  transform: rotate(180deg);
+  transition: transform 1s ease-in-out;
+}
+
+.content-enter {
+  opacity: 0;
+}
+
+.content-enter-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+.content-exit {
+  opacity: 1;
+}
+
+.content-exit-active {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.aboutDivHeader {
+  width: 100%;
+  height: 35px;
+  background-color: #ff6060;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  color: white;
+  padding-left: 10px;
+  font-size: medium;
+  font-weight: 400;
+}
+.aboutDivHeader h2 {
+  font-size: small;
+  font-weight: 600;
+}
+.aboutDivHeader button {
+  border: 0px;
+  background-color: #ff6060;
+  color: white;
+  margin-right: 40px;
+  font-size: larger;
+  transition: transform 1s;
 }/*# sourceMappingURL=index.css.map */

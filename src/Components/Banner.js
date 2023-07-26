@@ -1,10 +1,11 @@
 import React from 'react';
 
+
 const Banner = () => {
     return (
         <div className="banner">
 
-            <p>Chez vous chez vous</p>
+            <h2>Chez vous, partout et ailleurs</h2>
 
         </div>
     );
