@@ -11,4 +11,8 @@
     margin: 10px auto;
     padding: 25px 0;
 
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
 }

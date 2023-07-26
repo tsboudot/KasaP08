@@ -15,3 +15,15 @@
 
     border-radius: 25px;
 }
+
+.BannerAbout {
+    width: 98%;
+    margin: 5px auto;
+    max-width: 1245px;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 240px;
+    }
+}

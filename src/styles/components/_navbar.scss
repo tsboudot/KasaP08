@@ -9,6 +9,14 @@
     width: 95%;
     max-width: 1245px;
     margin: 10px auto;
+    box-sizing: border-box;
+    height: 115px;
+
+    >.active {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        text-decoration-thickness: 3px;
+    }
 
     a {
         text-decoration: none;

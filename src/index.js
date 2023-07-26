@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ApptPage from './Components/ApptPage';
 import { ApptProvider } from "./Components/context/ApptContext";
 import About from './Components/About';
+import Error from './Components/Error';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,7 +19,7 @@ root.render(
           <Route path="/" element={<App />} />
           <Route path="/flat/:id" element={<ApptPage />} />
           <Route path="/about" element={<About />} />
-          <Route path="*" element={<h1>404 Not found</h1>} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </Router>
     </ApptProvider>

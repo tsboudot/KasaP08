@@ -11,6 +11,11 @@
     width: 95%;
     margin: 10px auto;
 
+    @media (max-width: 768px) {
+        flex-direction: column;
+        height: auto;
+    }
+
     .apptHeaderLeft {
         display: flex;
         flex-direction: column;
@@ -55,6 +60,14 @@
 .apptHeaderRight {
     height: 100%;
 
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+    }
+
+
     .apptHeaderHost {
         display: flex;
         flex-direction: row;
@@ -75,6 +88,11 @@
             img {
                 object-fit: contain;
                 border-radius: 50%;
+
+                @media (max-width: 768px) {
+                    height: 90px;
+                    width: 90px;
+                }
             }
         }
     }

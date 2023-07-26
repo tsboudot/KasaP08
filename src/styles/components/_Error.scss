@@ -1,0 +1,22 @@
+.pageErrorMainSection {
+    height: calc(100% - (275px));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: $color-main;
+
+    h2 {
+        font-size: 115px;
+    }
+
+    a {
+
+        color: $color-main;
+
+    }
+}
+
+.pageError {
+    height: 100vh;
+}
