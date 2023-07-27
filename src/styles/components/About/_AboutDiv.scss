@@ -4,32 +4,17 @@
     gap: 5px;
     justify-content: space-around;
     width: 95%;
-    margin: 10px auto;
+    margin-right: auto;
+    margin-left: auto;
     max-width: 1095px;
     height: 260px;
+    margin-top: 55px;
+    margin-bottom: 55px;
 }
 
 .rotated {
     transform: rotate(180deg);
     transition: transform 1s ease-in-out;
-}
-
-.content-enter {
-    opacity: 0;
-}
-
-.content-enter-active {
-    opacity: 1;
-    transition: opacity 1s ease-in;
-}
-
-.content-exit {
-    opacity: 1;
-}
-
-.content-exit-active {
-    opacity: 0;
-    transition: opacity 1s ease-in;
 }
 
 .aboutDivHeader {
@@ -68,6 +53,7 @@
     color: $color-main;
     border-radius: 15px;
     font-size: small;
+    padding: 3px;
 }
 
 main {
@@ -75,20 +61,18 @@ main {
 
 }
 
-.FooterAbout {
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 25px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+.aboutDivContent {
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
 
-    img {
-        margin-bottom: 10px;
-    }
+.aboutDivContent.show {
+    opacity: 1;
+    height: auto;
+}
+
+.aboutDivContent.hide {
+    height: 0;
 }

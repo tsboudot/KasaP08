@@ -1,7 +1,5 @@
 import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-
+import ApptCaroussel from './ApptCaroussel';
 
 function Apptheader({ appt }) {
     const activeStars = [];
@@ -18,13 +16,9 @@ function Apptheader({ appt }) {
 
     return (
         <div className="apptHeader">
-            <Carousel>
-                {appt.pictures.map((picture, index) => (
-                    <div key={index}>
-                        <img src={picture} alt={`Slide ${index}`} />
-                    </div>
-                ))}
-            </Carousel>
+            <div className='Caroussel'>
+                <ApptCaroussel id={appt.id} />
+            </div>
             <div className="apptHeaderInfos">
                 <div className="apptHeaderLeft">
                     <div className="apptHeaderTittle&loc">

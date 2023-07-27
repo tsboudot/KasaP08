@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { CSSTransition } from 'react-transition-group';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretUp } from '@fortawesome/free-solid-svg-icons';
 
@@ -14,11 +13,9 @@ function AboutDiv({ title, id, content }) {
                     <FontAwesomeIcon icon={faCaretUp} />
                 </button>
             </div>
-            <CSSTransition in={showContent} timeout={1000} classNames="content" unmountOnExit>
-                <div className="aboutDivContent">
-                    {showContent && <p id={id}>{content}</p>}
-                </div>
-            </CSSTransition>
+            <div className={`aboutDivContent ${showContent ? 'show' : 'hide'}`}>
+                <p id={id}>{content}</p>
+            </div>
         </div>
     );
 };

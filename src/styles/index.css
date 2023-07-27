@@ -289,7 +289,8 @@ footer img {
   }
 }
 .apptInfos .description {
-  width: 50%;
+  width: 100%;
+  flex: 1;
 }
 @media (max-width: 768px) {
   .apptInfos .description {
@@ -298,13 +299,20 @@ footer img {
   }
 }
 .apptInfos .equipement {
-  width: 50%;
+  width: 100%;
+  flex: 1;
 }
 @media (max-width: 768px) {
   .apptInfos .equipement {
     width: 98%;
     margin: 5px auto;
   }
+}
+
+.column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 .apptInfosHeader {
@@ -340,49 +348,26 @@ footer img {
 .apptInfosContent {
   background-color: rgb(238, 238, 238);
   color: #ff6060;
-  padding: 5px 5px 5px 15px;
   border-radius: 25px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 1s ease-in-out, opacity 1s ease-in-out;
 }
 .apptInfosContent ul {
   list-style: none;
 }
 
-.description-enter {
-  max-height: 0;
-  overflow: hidden;
-}
-
-.description-enter-active {
-  max-height: 500px;
-  transition: max-height 1s ease-in;
-}
-
-.description-exit {
-  max-height: 500px;
-}
-
-.description-exit-active {
-  max-height: 0;
-  transition: max-height 1s ease-out;
-}
-
-.equipment-enter {
-  max-height: 0;
-  overflow: hidden;
-}
-
-.equipment-enter-active {
-  max-height: 500px;
-  transition: max-height 1s ease-in;
-}
-
-.equipment-exit {
-  max-height: 500px;
-}
-
-.equipment-exit-active {
-  max-height: 0;
-  transition: max-height 1s ease-out;
+.apptInfosContent.show {
+  height: 140px;
+  overflow: auto;
+  transform: scale(1);
+  opacity: 1;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 10px;
 }
 
 .aboutSection {
@@ -391,32 +376,17 @@ footer img {
   gap: 5px;
   justify-content: space-around;
   width: 95%;
-  margin: 10px auto;
+  margin-right: auto;
+  margin-left: auto;
   max-width: 1095px;
   height: 260px;
+  margin-top: 55px;
+  margin-bottom: 55px;
 }
 
 .rotated {
   transform: rotate(180deg);
   transition: transform 1s ease-in-out;
-}
-
-.content-enter {
-  opacity: 0;
-}
-
-.content-enter-active {
-  opacity: 1;
-  transition: opacity 1s ease-in;
-}
-
-.content-exit {
-  opacity: 1;
-}
-
-.content-exit-active {
-  opacity: 0;
-  transition: opacity 1s ease-in;
 }
 
 .aboutDivHeader {
@@ -452,27 +422,27 @@ footer img {
   color: #ff6060;
   border-radius: 15px;
   font-size: small;
+  padding: 3px;
 }
 
 main {
   height: 100%;
 }
 
-.FooterAbout {
-  background-color: black;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 25px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+.aboutDivContent {
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
 }
-.FooterAbout img {
-  margin-bottom: 10px;
+
+.aboutDivContent.show {
+  opacity: 1;
+  height: auto;
+}
+
+.aboutDivContent.hide {
+  height: 0;
 }
 
 .pageErrorMainSection {

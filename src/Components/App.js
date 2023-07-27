@@ -8,12 +8,14 @@ import Footer from "./Footer";
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Mainsection>
-        <Banner />
-        <ApptContainer />
-      </Mainsection>
-      <Footer />
+      <main>
+        <Navbar />
+        <Mainsection>
+          <Banner />
+          <ApptContainer />
+        </Mainsection>
+        <Footer />
+      </main>
     </div>
   );
 }
