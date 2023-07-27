@@ -1,6 +1,7 @@
 .apptHeader {
     height: fit-content;
     margin: 10px 10px 25px 10px;
+
 }
 
 .apptHeaderInfos {
@@ -10,6 +11,7 @@
     justify-content: space-between;
     width: 95%;
     margin: 10px auto;
+    max-width: 1245px;
 
     @media (max-width: 768px) {
         flex-direction: column;

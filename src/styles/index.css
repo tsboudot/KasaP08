@@ -73,8 +73,8 @@ body {
 }
 .BannerAbout img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
   height: 240px;
 }
 
@@ -89,7 +89,7 @@ body {
   width: 95%;
   max-width: 1245px;
   margin: 10px auto;
-  padding: 25px 0;
+  padding: 15px 0;
 }
 @media (max-width: 768px) {
   .apptContainer {
@@ -104,9 +104,9 @@ body {
 }
 
 .cardApptslink {
-  width: 27%;
+  width: 31%;
   height: 280px;
-  max-width: 370px;
+  max-width: 340px;
   max-height: 31%;
   box-sizing: border-box;
   display: flex;
@@ -185,6 +185,7 @@ footer img {
   justify-content: space-between;
   width: 95%;
   margin: 10px auto;
+  max-width: 1245px;
 }
 @media (max-width: 768px) {
   .apptHeaderInfos {
@@ -282,6 +283,8 @@ footer img {
   gap: 5%;
   width: 95%;
   margin: 10px auto;
+  margin-bottom: 25px;
+  max-width: 1245px;
 }
 @media (max-width: 768px) {
   .apptInfos {
@@ -313,6 +316,11 @@ footer img {
   width: 50%;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 768px) {
+  .column {
+    width: 100%;
+  }
 }
 
 .apptInfosHeader {
@@ -466,15 +474,17 @@ main {
 
 .Caroussel {
   width: 100%;
+  max-width: 1245px;
   height: 240px;
+  margin: auto;
   margin-bottom: 45px;
   position: relative;
 }
 .Caroussel img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 .Caroussel button {
   position: absolute;

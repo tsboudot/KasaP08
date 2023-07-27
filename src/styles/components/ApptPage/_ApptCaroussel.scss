@@ -1,6 +1,8 @@
 .Caroussel {
     width: 100%;
+    max-width: 1245px;
     height: 240px;
+    margin: auto;
     margin-bottom: 45px;
     position: relative;
 
@@ -8,7 +10,7 @@
     img {
         height: 100%;
         width: 100%;
-        object-fit: cover;
+        object-fit: fill;
     }
 
     button {
