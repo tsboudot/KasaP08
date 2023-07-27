@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from './Navbar';
+import Navbar from '../Navbar';
 import { useParams } from 'react-router-dom';
-import { useAppt } from './context/ApptContext'
+import { useAppt } from '../context/ApptContext'
 import Apptheader from './Apptheader';
 import Apptinfos from './Apptinfos';
-import Footer from './Footer';
+import Footer from '../Footer';
 
 
 function ApptPage() {
@@ -18,12 +18,12 @@ function ApptPage() {
     }
 
     return (
-        <div>
+        <main>
             <Navbar />
             <Apptheader appt={currentAppt} /> {/* passez l'appartement actuel comme prop */}
             <Apptinfos appt={currentAppt} />
             <Footer />
-        </div>
+        </main>
     );
 };
 

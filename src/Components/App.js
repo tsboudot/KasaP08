@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Banner from "./Banner";
-import ApptContainer from "./ApptContainer";
-import Mainsection from "./Mainsection";
+import ApptContainer from "./Homepage/ApptContainer";
+import Mainsection from "./Homepage/Mainsection";
 import Footer from "./Footer";
 
 function App() {

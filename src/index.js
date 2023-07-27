@@ -4,9 +4,9 @@ import './styles/index.css';
 import App from './Components/App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import ApptPage from './Components/ApptPage';
+import ApptPage from './Components/ApptPage/ApptPage';
 import { ApptProvider } from "./Components/context/ApptContext";
-import About from './Components/About';
+import About from './Components/AboutPage/About';
 import Error from './Components/Error';
 
 

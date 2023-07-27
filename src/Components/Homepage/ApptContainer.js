@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import CardAppt from './CardAppt';
-import { useAppt } from './context/ApptContext';
+import { useAppt } from '../context/ApptContext';
 
 function ApptContainer() {
     const appt = useAppt();
