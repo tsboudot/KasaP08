@@ -8,7 +8,7 @@ export const ApptProvider = ({ children }) => {
     const [appt, setAppt] = useState([]);
 
     useEffect(() => {
-        fetch("db.json")
+        fetch("/db.json")
             .then((res) => res.json())
             .then((res) => setAppt(res));
     }, []);
