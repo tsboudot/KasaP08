@@ -5,6 +5,7 @@ import { useAppt } from '../context/ApptContext'
 import Apptheader from './Apptheader';
 import Apptinfos from './Apptinfos';
 import Footer from '../Footer';
+import Error from '../Error';
 
 
 
@@ -15,7 +16,7 @@ function ApptPage() {
     const currentAppt = appt.find((apt) => apt.id === id);
 
     if (!currentAppt) {
-        return <div>Appartement non trouvé</div>;
+        return <Error />;
     }
 
     return (
