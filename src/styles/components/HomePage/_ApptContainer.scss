@@ -4,15 +4,20 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 85vh;
+    height: auto;
     border-radius: 50px;
     width: 95%;
     max-width: 1245px;
     margin: 10px auto;
     padding: 15px 0;
 
-    @media (max-width: 768px) {
-        flex-direction: column;
-    }
+}
 
+@media (max-width: 768px) {
+    .apptContainer {
+        flex-direction: column;
+        overflow: hidden;
+        flex-wrap: nowrap;
+        height: auto;
+    }
 }

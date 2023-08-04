@@ -12,14 +12,12 @@
     border-radius: 20px;
 
     @media (max-width: 768px) {
-
-        max-width: 498px;
+        width: 88%;
+        max-width: none;
         margin: 0 auto;
     }
 
-    @media (max-width: 710px) {
-        width: 88%;
-    }
+
 }
 
 .cardApptDiv {

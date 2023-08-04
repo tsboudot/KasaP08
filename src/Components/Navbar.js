@@ -5,8 +5,10 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="navbar__logo"><img src='/logo.png' alt="logo" /></div>
-            <NavLink to="/" activeClassName="active" exact>Accueil</NavLink>
-            <NavLink to="/about" activeClassName="active">A propos</NavLink>
+            <div className="navbar_divLink">
+                <NavLink to="/" activeclassname="active">Accueil</NavLink>
+                <NavLink to="/about" activeclassname="active">A propos</NavLink>
+            </div>
         </nav>
     );
 };

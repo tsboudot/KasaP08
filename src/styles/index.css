@@ -25,17 +25,24 @@ body {
   box-sizing: border-box;
   height: 115px;
 }
-.navbar > .active {
+.navbar .navbar_divLink {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.navbar .navbar_divLink > .active {
   text-decoration: underline;
   text-underline-offset: 5px;
   text-decoration-thickness: 3px;
 }
-.navbar a {
+.navbar .navbar_divLink a {
   text-decoration: none;
   color: #ff6060;
+  margin: 0 10px;
 }
-.navbar p {
-  margin: 0 45px;
+.navbar .navbar_divLink p {
+  margin: 45px;
   font-size: large;
 }
 
@@ -84,19 +91,22 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 85vh;
+  height: auto;
   border-radius: 50px;
   width: 95%;
   max-width: 1245px;
   margin: 10px auto;
   padding: 15px 0;
 }
+
 @media (max-width: 768px) {
   .apptContainer {
     flex-direction: column;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    height: auto;
   }
 }
-
 .Mainsection {
   width: 100%;
   margin: 2rem 0rem;
@@ -117,13 +127,9 @@ body {
 }
 @media (max-width: 768px) {
   .cardApptslink {
-    max-width: 498px;
-    margin: 0 auto;
-  }
-}
-@media (max-width: 710px) {
-  .cardApptslink {
     width: 88%;
+    max-width: none;
+    margin: 0 auto;
   }
 }
 
