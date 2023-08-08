@@ -22,7 +22,7 @@ function Apptheader({ appt }) {
             <div className="apptHeaderInfos">
                 <div className="apptHeaderLeft">
                     <div className="apptHeaderTittle&loc">
-                        <h3 className="apptTittle">{appt.title}</h3> {/* utilisez la prop pour afficher le titre */}
+                        <h3 className="apptTittle">{appt.title}</h3>
                         <p className="apptLocation">{appt.location}</p>
                     </div>
                     <div className="apptHeadertags">

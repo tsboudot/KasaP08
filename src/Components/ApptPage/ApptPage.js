@@ -22,7 +22,7 @@ function ApptPage() {
     return (
         <main>
             <Navbar />
-            <Apptheader appt={currentAppt} /> {/* passez l'appartement actuel comme prop */}
+            <Apptheader appt={currentAppt} />
             <Apptinfos appt={currentAppt} />
             <Footer />
         </main>
