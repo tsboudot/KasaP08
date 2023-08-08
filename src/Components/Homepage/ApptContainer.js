@@ -13,7 +13,7 @@ function ApptContainer() {
         };
 
         window.addEventListener('resize', handleResize);
-        handleResize(); // Vérifie la taille de l'écran lors du premier rendu
+        handleResize();
 
         return () => {
             window.removeEventListener('resize', handleResize);
