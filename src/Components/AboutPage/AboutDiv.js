@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretUp } from '@fortawesome/free-solid-svg-icons';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 function AboutDiv({ title, id, content }) {
     const [showContent, setShowContent] = useState(false);
@@ -10,7 +10,7 @@ function AboutDiv({ title, id, content }) {
             <div className="aboutDivHeader">
                 <h2>{title}</h2>
                 <button onClick={() => setShowContent(!showContent)} className={showContent ? "rotated" : ""}>
-                    <FontAwesomeIcon icon={faCaretUp} />
+                    <FontAwesomeIcon icon={faChevronUp} />
                 </button>
             </div>
             <div className={`aboutDivContent ${showContent ? 'show' : 'hide'}`}>

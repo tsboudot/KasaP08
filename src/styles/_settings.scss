@@ -4,13 +4,27 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+#root {
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 
+  min-height: 100vh;
+  margin: 0;
 }
+
+main {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hidden {
+  display: none;
+}
+
 
 $color-main: #ff6060;
 $color-secondary: rgb(238, 238, 238);

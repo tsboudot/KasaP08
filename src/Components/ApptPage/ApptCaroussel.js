@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useAppt } from '../context/ApptContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
-import { faCaretLeft } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 const ApptCaroussel = ({ id }) => {
     const appts = useAppt();
     const currentAppt = appts.find((apt) => apt.id === id);
@@ -22,11 +22,14 @@ const ApptCaroussel = ({ id }) => {
 
     return (
         <div className='Caroussel'>
-            <button className="prevButton" onClick={handlePrev}><FontAwesomeIcon icon={faCaretLeft} /></button>
+            <button className="prevButton" onClick={handlePrev}>
+                <FontAwesomeIcon icon={faChevronLeft} className={currentAppt.pictures.length === 1 ? 'hidden' : ''} />
+            </button>
             <img className='CarousselImg' src={currentAppt.pictures[pictureIndex]} alt="imageAppt" />
-            <button className="nextButton" onClick={handleNext}><FontAwesomeIcon icon={faCaretRight} /></button>
+            <button className="nextButton" onClick={handleNext}>
+                <FontAwesomeIcon icon={faChevronRight} className={currentAppt.pictures.length === 1 ? 'hidden' : ''} />
+            </button>
             <p className="CarousselIndex">{`${pictureIndex + 1} / ${currentAppt.pictures.length}`}</p>
-
         </div>
     );
 };

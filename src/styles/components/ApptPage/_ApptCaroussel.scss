@@ -10,7 +10,7 @@
     img {
         height: 100%;
         width: 100%;
-        object-fit: fill;
+        object-fit: cover;
     }
 
     button {
@@ -25,10 +25,12 @@
 
     .prevButton {
         left: 0;
+        font-size: 35px;
     }
 
     .nextButton {
         right: 0;
+        font-size: 35px;
 
 
     }
@@ -38,5 +40,9 @@
         bottom: 10px;
         right: 48%;
         color: white;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretUp } from '@fortawesome/free-solid-svg-icons';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 function Apptinfos({ appt }) {
     const [showDescription, setShowDescription] = useState(false);
@@ -16,7 +16,7 @@ function Apptinfos({ appt }) {
                     <div className="apptInfosHeader">
                         <h2>Description</h2>
                         <button onClick={() => setShowDescription(!showDescription)} className={showDescription ? "rotated" : ""}>
-                            <FontAwesomeIcon icon={faCaretUp} />
+                            <FontAwesomeIcon icon={faChevronUp} />
                         </button>
                     </div>
 
@@ -31,7 +31,7 @@ function Apptinfos({ appt }) {
                     <div className="apptInfosHeader">
                         <h2>Equipements</h2>
                         <button onClick={() => setShowEquipment(!showEquipment)} className={showEquipment ? "rotated" : ""}>
-                            <FontAwesomeIcon icon={faCaretUp} />
+                            <FontAwesomeIcon icon={faChevronUp} />
                         </button>
                     </div>
 
